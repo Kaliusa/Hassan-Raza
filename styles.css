@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: #121212;
+}
+
+header {
+  text-align: center;
+  padding: 50px 0;
+  position: relative; /* Position relative for the header menu */
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  color: #ffa500; /* Orange color for headers */
+}
+
+.responsive-image {
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+header .header-menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.menu-button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.dropdown {
+  display: none; /* Hide dropdown initially */
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background-color: #333;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.dropdown ul {
+  list-style: none;
+  padding: 10px;
+}
+
+.dropdown li {
+  padding: 8px 12px;
+  color: white;
+  cursor: pointer;
+}
+
+.dropdown li:hover {
+  background-color: #ffa500; /* Highlight on hover */
+}
+
+.signup-button {
+  background-color: #ffa500;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px; /* Add space between menu button and sign up */
+}
+
+.signup-button:hover {
+  transform: scale(1.1);
+}
+
+button {
+  background-color: #ffa500;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.animation-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.footer-menu {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-menu ul {
+  list-style: none;
+}
+
+.footer-menu li {
+  display: inline;
+  margin: 0 15px;
+}
